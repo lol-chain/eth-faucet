@@ -4,12 +4,12 @@
   import { formatEther } from '@ethersproject/units';
   import { setDefaults as setToast, toast } from 'bulma-toast';
   
-  let distribution = 0.5;
+  let distribution = 10.0;
   let address = null;
   let faucetInfo = {
     account: '0x0000000000000000000000000000000000000000',
     network: 'testnet',
-    payout: 0.5
+    payout: 10.0
   };
 
   $: document.title = `KEK ${capitalize(faucetInfo.network)} Faucet`;
